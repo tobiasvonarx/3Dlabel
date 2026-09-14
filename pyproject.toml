@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "label3d"
+version = "0.3.0"
+description = "Independent local 3D annotation app with portable scene bundles"
+requires-python = ">=3.11,<3.13"
+dependencies = ["building-data", "fastapi==0.116.1", "uvicorn[standard]==0.35.0", "python-dotenv>=1.1"]
+
+[project.scripts]
+label3d = "label3d.server:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "httpx>=0.28"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["python/label3d"]
+
+[tool.uv.sources]
+building-data = { git = "https://github.com/tobiasvonarx/emboss.git", rev = "c6c312100b49c98d1d619c414a38ad24fb91f74a", subdirectory = "packages/building-data" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

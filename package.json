@@ -1,0 +1,32 @@
+{
+  "name": "3dlabel",
+  "version": "0.2.0",
+  "description": "Browser-based 3D ground-truth annotation for point clouds: wireframes and explicit surface meshes, with optional DEM and Google photorealistic 3D context.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "3d-tiles-renderer": "^0.4.27",
+    "@vitejs/plugin-react": "^5.0.0",
+    "geotiff": "^2.1.3",
+    "lucide-react": "^0.468.0",
+    "proj4": "^2.20.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.171.0",
+    "vite": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/proj4": "^2.19.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.171.0",
+    "typescript": "^5.7.2",
+    "vitest": "^4.1.10"
+  }
+}

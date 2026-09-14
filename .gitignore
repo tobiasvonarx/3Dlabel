@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Vite / frontend caches
+.vite/
+node_modules/.vite/
+node_modules/.vite-temp/
+
+# Python local environment and caches
+.venv/
+.native/
+__pycache__/
+*.py[cod]
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Large local datasets and generated splits
+data/
+
+.pytest_cache/
